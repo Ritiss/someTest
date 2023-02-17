@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0 0 0 0;
+}
+
+.cont {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 82%;
+    position: relative;
+    overflow: hidden;
+
+    // @media only screen and (min-width: 2500px) {
+    //     width: 100%;
+    //     max-width: 1920px;
+    // }
+}
+
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", Tahoma, serif;
+    position: relative;
+    background: #14022c;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: white;
+
+    h1 {
+        color: #14022c;
+        font-size: 30px;
+    }
+}
+
+main {
+
+    .block {
+        display: flex;
+        min-height: 800px;
+
+        .blockImg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 40%;
+            // background: url(../img/rain.jpeg) 100% no-repeat;
+
+            h2 {
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+
+    .block2nd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 1000px;
+        background: url(../img/1.png) 100% no-repeat;
+
+        .blockTest {
+            .test {
+                height: 600px;
+                border: 0;
+            }
+        }
+    }
+}
+
+footer {
+    min-height: 80px;
+    background: white;
+
+    .copy,
+    p {
+        margin: 32px 0;
+        color: #14022c;
+        font-size: 16px;
+    }
+
+    .copySpan {
+        margin-right: 6px;
+    }
+}
