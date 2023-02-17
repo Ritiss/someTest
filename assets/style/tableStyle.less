@@ -19,6 +19,17 @@ p {
     // }
 }
 
+.element-animation {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 3s;
+    transform: translateY(0%);
+}
+
 body {
     margin: 0;
     font-family: "Comic Sans MS", "Comic Sans", Tahoma, serif;
@@ -43,19 +54,34 @@ main {
 
     .block {
         display: flex;
-        min-height: 800px;
+        min-height: 850px;
+        background: url(../img/2.png) no-repeat;
 
-        .blockImg {
+        .blockText {
             display: flex;
             align-items: center;
+            flex-direction: column;
             justify-content: center;
-            min-width: 40%;
-            // background: url(../img/rain.jpeg) 100% no-repeat;
+            min-width: 75%;
 
             h2 {
-                font-size: 30px;
+                margin: 0 0 60px 0;
+                font-size: 60px;
+                text-align: start;
                 color: white;
             }
+
+            p {
+                margin: 0 0 0 130px;
+                font-size: 32px;
+                text-align: end;
+                color: white;
+                transition: all 4s;
+            }
+        }
+
+        .blockImg {
+            min-width: 25%;
         }
     }
 
@@ -68,7 +94,8 @@ main {
 
         .blockTest {
             .test {
-                height: 600px;
+                width: 480px;
+                min-height: 600px;
                 border: 0;
             }
         }
@@ -88,5 +115,15 @@ footer {
 
     .copySpan {
         margin-right: 6px;
+    }
+}
+
+@keyframes ani {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
